@@ -1,0 +1,61 @@
+workflow_get_inputs_resp_elem:
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_input
+      method: GET
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}/_input
+      method: GET
+
+workflow_input_data:
+  - update:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_input
+      method: PUT
+  - update:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}/_input
+      method: PUT
+
+com.nokia.eda.environment.v1alpha1.cli_plugin:
+  - create:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins
+      method: POST
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}
+      method: GET
+
+com.nokia.eda.environment.v1alpha1.cli_plugin_list:
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/cliplugins
+      method: GET
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins
+      method: GET
+
+com.nokia.eda.environment.v1alpha1.setup_env:
+  - create:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs
+      method: POST
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}
+      method: GET
+
+com.nokia.eda.environment.v1alpha1.setup_env_list:
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs
+      method: GET
+  - read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/setupenvs
+      method: GET
+
+totalPaths: 14
+totalSchemas: 14
+usedSchemas: 6
+unusedSchemas: 8
+unusedSchemaList:
+  - ErrorIndex
+  - ErrorItem
+  - ErrorResponse
+  - WorkflowId
+  - WorkflowIdentifier
+  - WorkflowInputDataElem
+  - com.nokia.eda.environment.v1alpha1.CliPlugin_metadata
+  - com.nokia.eda.environment.v1alpha1.SetupEnv_metadata

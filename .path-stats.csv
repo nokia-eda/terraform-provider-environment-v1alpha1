@@ -1,0 +1,21 @@
+Path,Method,Schema,Model Name,Supported,Datasource,Resource
+/workflows/v1/environment.eda.nokia.com/v1alpha1/cliplugins,GET,com.nokia.eda.environment.v1alpha1.CliPluginList,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins,GET,com.nokia.eda.environment.v1alpha1.CliPluginList,cli_plugin_list,true,true,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins,POST,com.nokia.eda.environment.v1alpha1.CliPlugin,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name},DELETE,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name},GET,com.nokia.eda.environment.v1alpha1.CliPlugin,cli_plugin,true,true,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_artifacts,GET,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_artifacts/{artifact},GET,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_input,GET,WorkflowGetInputsRespElem,workflow_get_inputs_resp_elem,true,true,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_input,PUT,WorkflowInputData,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_logs,GET,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs,GET,com.nokia.eda.environment.v1alpha1.SetupEnvList,setup_env_list,true,true,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs,POST,com.nokia.eda.environment.v1alpha1.SetupEnv,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name},DELETE,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name},GET,com.nokia.eda.environment.v1alpha1.SetupEnv,setup_env,true,true,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}/_artifacts,GET,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}/_artifacts/{artifact},GET,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}/_input,GET,WorkflowGetInputsRespElem,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}/_input,PUT,WorkflowInputData,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}/_logs,GET,,,false,false,false
+/workflows/v1/environment.eda.nokia.com/v1alpha1/setupenvs,GET,com.nokia.eda.environment.v1alpha1.SetupEnvList,,false,false,false

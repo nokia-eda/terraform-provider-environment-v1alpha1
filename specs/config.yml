@@ -1,0 +1,30 @@
+provider:
+  name: environment
+
+data_sources:
+  cli_plugin:
+    read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}
+      method: GET
+
+  cli_plugin_list:
+    read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins
+      method: GET
+
+  setup_env:
+    read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}
+      method: GET
+
+  setup_env_list:
+    read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs
+      method: GET
+
+  workflow_get_inputs_resp_elem:
+    read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}/_input
+      method: GET
+
+resources:
