@@ -46,16 +46,19 @@ com.nokia.eda.environment.v1alpha1.setup_env_list:
       path: /workflows/v1/environment.eda.nokia.com/v1alpha1/setupenvs
       method: GET
 
-totalPaths: 14
-totalSchemas: 14
+totalPaths: 16
+totalSchemas: 17
 usedSchemas: 6
-unusedSchemas: 8
+unusedSchemas: 11
 unusedSchemaList:
   - ErrorIndex
   - ErrorItem
   - ErrorResponse
-  - WorkflowId
   - WorkflowIdentifier
   - WorkflowInputDataElem
+  - com.nokia.eda.environment.v1alpha1.CliPlugin_alarms
+  - com.nokia.eda.environment.v1alpha1.CliPlugin_deviations
   - com.nokia.eda.environment.v1alpha1.CliPlugin_metadata
+  - com.nokia.eda.environment.v1alpha1.SetupEnv_alarms
+  - com.nokia.eda.environment.v1alpha1.SetupEnv_deviations
   - com.nokia.eda.environment.v1alpha1.SetupEnv_metadata

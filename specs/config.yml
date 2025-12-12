@@ -28,3 +28,24 @@ data_sources:
       method: GET
 
 resources:
+  cli_plugin:
+    create:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins
+      method: POST
+    read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}
+      method: GET
+    delete:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/cliplugins/{name}
+      method: DELETE
+
+  setup_env:
+    create:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs
+      method: POST
+    read:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}
+      method: GET
+    delete:
+      path: /workflows/v1/environment.eda.nokia.com/v1alpha1/namespaces/{namespace}/setupenvs/{name}
+      method: DELETE
